@@ -55,7 +55,7 @@
     }
     </style>
 
-    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
     <script>
       // Initialize Firebase
       /*
@@ -64,19 +64,19 @@
       */
     
       var config = {
-        apiKey: "AIzaSyCM8pzm6k84GfKM5sPnRx6OOW_Lut9RAGg",
-        authDomain: "esp8266-481c3.firebaseapp.com",
-        databaseURL: "https://esp8266-481c3.firebaseio.com",
-        projectId: "esp8266-481c3",
-        storageBucket: "esp8266-481c3.appspot.com",
-        messagingSenderId: "782537917360"
+        apiKey: "AIzaSyBPP9TL1AuN03T9nUXLK_FdmWaRSEu1lUE",
+        authDomain: "makered-44747.firebaseapp.com",
+        databaseURL: "https://makered-44747.firebaseio.com",
+        projectId: "makered-44747",
+        storageBucket: "makered-44747.appspot.com",
+        messagingSenderId: "872948977554"
       };
       firebase.initializeApp(config);
       // 여기까지....
     
       // Get a reference to the database service
       var db = firebase.database();
-      var sunlight = db.ref('sunlight');
+      var sunlight = db.ref('val');
       sunlight.on('value', function(snapshot) {
         console.log("sunlight: "+snapshot.val());
         move(document.querySelector("#sunlight > div"), parseInt((snapshot.val()/1010)*100));
