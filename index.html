@@ -87,18 +87,18 @@
         console.log("kjh: "+snapshot.val());
         move(document.querySelector("#kjh > div"), parseInt((snapshot.val()/1010)*100));
       });
-      var pushbutton = db.ref('pushbutton');
-      pushbutton.on('value', function(snapshot) {
-        console.log("pushbutton: "+snapshot.val());
-        document.querySelector("#pushbutton > input").checked = snapshot.val();
-      });
-      var redlight = db.ref('redlight');
-      redlight.on('value', function(snapshot) {
-        console.log("redlight: "+snapshot.val());
-        if(snapshot.val()) document.querySelector("#redlight").style.background = 'rgb(50, 100, 100)';
-        if(!snapshot.val()) document.querySelector("#redlight").style.background = 'transparent';
-        document.querySelector("#redlightbtn > input").checked = snapshot.val();
-      });
+//       var pushbutton = db.ref('pushbutton');
+//       pushbutton.on('value', function(snapshot) {
+//         console.log("pushbutton: "+snapshot.val());
+//         document.querySelector("#pushbutton > input").checked = snapshot.val();
+//       });
+//       var redlight = db.ref('redlight');
+//       redlight.on('value', function(snapshot) {
+//         console.log("redlight: "+snapshot.val());
+//         if(snapshot.val()) document.querySelector("#redlight").style.background = 'rgb(50, 100, 100)';
+//         if(!snapshot.val()) document.querySelector("#redlight").style.background = 'transparent';
+//         document.querySelector("#redlightbtn > input").checked = snapshot.val();
+//       });
       function move(elem, kjh) {
           var width = parseInt(elem.style.width);
           var id = setInterval(frame, 10);
@@ -117,7 +117,8 @@
       </script>
   </head>
   <body style="margin:2em;">
-    <h1>오늘 경사로를 오른 사람의 숫자</h1>
+    <h1>운동을 하자 이벤트!!</h1><p>
+    <h3>이 이벤트는 하루 1000명의 사람이 계단을 오르는 것을 목적으로 하고 있습니다.</h3>
     <div id="kjh" class="w3-progress-container w3-pale-blue">
       <div class="w3-progressbar w3-blue" style="width:35%">
         <div class="w3-center w3-text-white"></div>
@@ -127,7 +128,7 @@
         </div>
       </div>
     </div>
-
+<!-- 
     <h3>Push Button</h3>
     <label id="pushbutton" class="switch">
       <input type="checkbox" onclick="pushbutton.set(+this.checked)">
@@ -140,6 +141,7 @@
       <div class="slider round"></div>
     </label>
     <div id="redlight" style="width:150px;height:80px;border:1px solid blue"></div>
-    <br/> 
+    <br/>  
+-->
   </body>
 </html>
