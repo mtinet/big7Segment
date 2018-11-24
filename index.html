@@ -94,7 +94,7 @@
       var redlight = db.ref('redlight');
       redlight.on('value', function(snapshot) {
         console.log("redlight: "+snapshot.val());
-        if(snapshot.val()) document.querySelector("#redlight").style.background = 'rgb(255, 100, 100)';
+        if(snapshot.val()) document.querySelector("#redlight").style.background = 'rgb(50, 100, 100)';
         if(!snapshot.val()) document.querySelector("#redlight").style.background = 'transparent';
         document.querySelector("#redlightbtn > input").checked = snapshot.val();
       });
