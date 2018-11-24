@@ -98,15 +98,15 @@
         if(!snapshot.val()) document.querySelector("#redlight").style.background = 'transparent';
         document.querySelector("#redlightbtn > input").checked = snapshot.val();
       });
-      function move(elem, val) {
+      function move(elem, kjh) {
           var width = parseInt(elem.style.width);
           var id = setInterval(frame, 10);
           function frame() {
-              if (width == val) {
+              if (width == kjh) {
                   clearInterval(id);
               } else {
-                  if(val > width) width++;
-                  else if(val < width) width--;
+                  if(kjh > width) width++;
+                  else if(kjh < width) width--;
                   if(width >= 100 || width <= 0) clearInterval(id);
                   elem.style.width = width + '명';
                   elem.querySelector("div").innerText = elem.style.width;
