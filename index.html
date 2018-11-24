@@ -84,7 +84,7 @@
       var kjh = db.ref('kjh');
       kjh.on('value', function(snapshot) {
         console.log("kjh: "+snapshot.val());
-        move(document.querySelector("#kjh > div > div"), parseInt((snapshot.val()/1010)*100));
+        move(document.querySelector("#kjh > div"), parseInt((snapshot.val()/1010)*100));
       });
       var pushbutton = db.ref('pushbutton');
       pushbutton.on('value', function(snapshot) {
@@ -108,7 +108,7 @@
                   if(kjh > width) width++;
                   else if(kjh < width) width--;
                   if(width >= 100 || width <= 0) clearInterval(id);
-                  elem.style.width = width + '명';
+                  elem.style.width = width + '%';
                   elem.querySelector("div").innerText = elem.style.width;
               }
           }
@@ -119,7 +119,7 @@
     <h1>오늘 경사로를 오른 사람의 숫자</h1>
     <div id="kjh" class="w3-progress-container w3-pale-blue">
       <div class="w3-progressbar w3-blue" style="width:45%">
-        <div class="w3-center w3-text-white">50</div>
+        <div class="w3-center w3-text-white">40%</div>
       </div>
     </div>
 
