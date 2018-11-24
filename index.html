@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Firebase Client</title>
+    <title>Firebase 활용</title>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
-<!--     
+   
   <style>
     .switch {
       position: relative;
@@ -56,7 +56,7 @@
       border-radius: 50%;
     }
   </style>
--->
+
     
     
 <!--
@@ -91,13 +91,13 @@
 //         console.log("pushbutton: "+snapshot.val());
 //         document.querySelector("#pushbutton > input").checked = snapshot.val();
 //       });
-//       var redlight = db.ref('redlight');
-//       redlight.on('value', function(snapshot) {
-//         console.log("redlight: "+snapshot.val());
-//         if(snapshot.val()) document.querySelector("#redlight").style.background = 'rgb(255, 100, 100)';
-//         if(!snapshot.val()) document.querySelector("#redlight").style.background = 'transparent';
-//         document.querySelector("#redlightbtn > input").checked = snapshot.val();
-//       });
+      var redlight = db.ref('redlight');
+      redlight.on('value', function(snapshot) {
+        console.log("redlight: "+snapshot.val());
+        if(snapshot.val()) document.querySelector("#redlight").style.background = 'rgb(255, 100, 100)';
+        if(!snapshot.val()) document.querySelector("#redlight").style.background = 'transparent';
+        document.querySelector("#redlightbtn > input").checked = snapshot.val();
+      });
       function move(elem, val) {
           var width = parseInt(elem.style.width);
           var id = setInterval(frame, 10);
@@ -128,13 +128,13 @@
       <input type="checkbox" onclick="pushbutton.set(+this.checked)">
       <div class="slider round"></div>
     </label>
-
+-->
     <h3>Red Light</h3>
     <label id="redlightbtn" class="switch">
       <input type="checkbox" onclick="redlight.set(+this.checked)">
       <div class="slider round"></div>
     </label>
     <div id="redlight" style="width:150px;height:80px;border:1px solid red"></div>
-    <br/> -->
+    <br/> 
   </body>
 </html>
