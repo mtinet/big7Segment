@@ -25,18 +25,18 @@
 // FIREBASE_HOST는 firebase project - database - data 탭아래의 URL의 앞부분의 'https://'와 마지막의 '/'를 제외한 다음 복사하세요.
 // FIREBASE_AUTH는 firebase project - ⚙ 그림 선택 - 프로젝트 설정 - 서비스 계정 - 데이터베이스 비밀번호 - 데이터베이스프로젝트이름
 // 쪽으로 마우스를 이동하면 '표시' 버튼이 보입니다. 그 버튼을 누르면 비밀번호가 표시되게 되고 이것을 복사해서 여기에 넣어주어야 합니다.
-#define FIREBASE_HOST "Database URL without 'https://' and trailing '/'" 
-#define FIREBASE_AUTH "⚙ > Project Settings > Service Accounts > Legacy Credentials > Database Secrets > SHOW"
-#define WIFI_SSID "Your Wi-Fi SSID"
-#define WIFI_PASSWORD "Your Wi-Fi Password"
+#define FIREBASE_HOST "makered-44747.firebaseio.com" 
+#define FIREBASE_AUTH "AIzaSyBPP9TL1AuN03T9nUXLK_FdmWaRSEu1lUE"
+#define WIFI_SSID "G6 plus_2362"
+#define WIFI_PASSWORD "33333333"
 
 
 const int grovePowerPin = 15;
-const int vibratorPin = 5;
+// const int vibratorPin = 5;
 const int lightSensorPin = A0;
-const int ledPin = 12;
-const int buttonPin = 14;
-const int fanPin = 13;
+// const int ledPin = 12;
+// const int buttonPin = 14;
+// const int fanPin = 13;
 
 void setup() {
   Serial.begin(9600);
@@ -44,11 +44,11 @@ void setup() {
   pinMode(grovePowerPin, OUTPUT);
   digitalWrite(grovePowerPin, HIGH);
 
-  pinMode(vibratorPin, OUTPUT);
+//   pinMode(vibratorPin, OUTPUT);
   pinMode(lightSensorPin, INPUT);
-  pinMode(ledPin, OUTPUT);
-  pinMode(buttonPin, INPUT);
-  pinMode(fanPin, OUTPUT);
+//   pinMode(ledPin, OUTPUT);
+//   pinMode(buttonPin, INPUT);
+//   pinMode(fanPin, OUTPUT);
 
   // connect to wifi.
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
@@ -62,29 +62,29 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
-  Firebase.set("pushbutton", 0);
-  Firebase.set("sunlight", 0);
-  Firebase.set("redlight", 0);
-  Firebase.set("cooldown", 0);
-  Firebase.set("brrr", 0);
+//   Firebase.set("pushbutton", 0);
+  Firebase.set("kjh", 35);
+//   Firebase.set("redlight", 0);
+//   Firebase.set("cooldown", 0);
+//   Firebase.set("brrr", 0);
 }
 
 int button = 0;
 float light = 0.0;
 
 void loop() {
-  digitalWrite(ledPin, Firebase.getInt("redlight"));
-  digitalWrite(fanPin, Firebase.getInt("cooldown"));
-  digitalWrite(vibratorPin, Firebase.getInt("brrr"));
-  int newButton = digitalRead(buttonPin);
-  if (newButton != button) {
-    button = newButton;
-    Firebase.setInt("pushbutton", button);
-  }
+//   digitalWrite(ledPin, Firebase.getInt("redlight"));
+//   digitalWrite(fanPin, Firebase.getInt("cooldown"));
+//   digitalWrite(vibratorPin, Firebase.getInt("brrr"));
+//   int newButton = digitalRead(buttonPin);
+//   if (newButton != button) {
+//     button = newButton;
+//     Firebase.setInt("pushbutton", button);
+//   }
   float newLight = analogRead(lightSensorPin);
   if (abs(newLight - light) > 100) {
     light = newLight;
-    Firebase.setFloat("sunlight", light);
+    Firebase.setFloat("kjh", light);
   }
   delay(200);
 }
