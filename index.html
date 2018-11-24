@@ -98,25 +98,25 @@
 //         if(!snapshot.val()) document.querySelector("#redlight").style.background = 'transparent';
 //         document.querySelector("#redlightbtn > input").checked = snapshot.val();
 //       });
-//       function move(elem, val) {
-//           var width = parseInt(elem.style.width);
-//           var id = setInterval(frame, 10);
-//           function frame() {
-//               if (width == val) {
-//                   clearInterval(id);
-//               } else {
-//                   if(val > width) width++;
-//                   else if(val < width) width--;
-//                   if(width >= 100 || width <= 0) clearInterval(id);
-//                   elem.style.width = width + '%';
-//                   elem.querySelector("div").innerText = elem.style.width;
-//               }
-//           }
-//       }
+      function move(elem, val) {
+          var width = parseInt(elem.style.width);
+          var id = setInterval(frame, 10);
+          function frame() {
+              if (width == val) {
+                  clearInterval(id);
+              } else {
+                  if(val > width) width++;
+                  else if(val < width) width--;
+                  if(width >= 100 || width <= 0) clearInterval(id);
+                  elem.style.width = width + '명';
+                  elem.querySelector("div").innerText = elem.style.width;
+              }
+          }
+      }
       </script>
   </head>
   <body style="margin:2em;">
-    <h3>오늘 경사로를 오른 사람의 숫자</h3>
+    <h1>오늘 경사로를 오른 사람의 숫자</h1>
     <div id="val" class="w3-progress-container w3-pale-blue">
       <div class="w3-progressbar w3-blue" style="width:35%">
         <div class="w3-center w3-text-white">35%</div>
