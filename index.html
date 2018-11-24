@@ -84,7 +84,7 @@
       var kjh = db.ref('kjh');
       kjh.on('value', function(snapshot) {
         console.log("kjh: "+snapshot.val());
-        move(document.querySelector("#kjh > div"), parseInt((snapshot.val()/1010)*100));
+        move(document.querySelector("#kjh > div > div"), parseInt((snapshot.val()/1010)*100));
       });
       var pushbutton = db.ref('pushbutton');
       pushbutton.on('value', function(snapshot) {
