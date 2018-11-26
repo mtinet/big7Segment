@@ -1,3 +1,4 @@
+int delaytime = 50;
 
 void setup() {
   pinMode(13, OUTPUT);
@@ -28,9 +29,9 @@ void loop() {
 void intro() {
    for(int i = 13; i > 5; i--) {
     digitalWrite(i, HIGH);
-    delay(100);                    
+    delay(delaytime);                    
     digitalWrite(i, LOW);
-    delay(100);    
+    delay(delaytime);    
    }
 }
 
@@ -43,11 +44,11 @@ void one() {
   digitalWrite(8, HIGH);
   digitalWrite(7, LOW);
   digitalWrite(6, LOW);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void two() {
@@ -59,11 +60,11 @@ void two() {
   digitalWrite(8, LOW);
   digitalWrite(7, HIGH);
   digitalWrite(6, HIGH);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void three() {
@@ -75,11 +76,11 @@ void three() {
   digitalWrite(8, HIGH);
   digitalWrite(7, HIGH);
   digitalWrite(6, LOW);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void four() {
@@ -91,11 +92,11 @@ void four() {
   digitalWrite(8, HIGH);
   digitalWrite(7, LOW);
   digitalWrite(6, LOW);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void five() {
@@ -107,11 +108,11 @@ void five() {
   digitalWrite(8, HIGH);
   digitalWrite(7, HIGH);
   digitalWrite(6, LOW);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void six() {
@@ -123,11 +124,11 @@ void six() {
   digitalWrite(8, HIGH);
   digitalWrite(7, HIGH);
   digitalWrite(6, HIGH);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void seven() {
@@ -139,11 +140,11 @@ void seven() {
   digitalWrite(8, HIGH);
   digitalWrite(7, LOW);
   digitalWrite(6, LOW);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void eight() {
@@ -155,11 +156,11 @@ void eight() {
   digitalWrite(8, HIGH);
   digitalWrite(7, HIGH);
   digitalWrite(6, HIGH);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void nine() {
@@ -171,11 +172,11 @@ void nine() {
   digitalWrite(8, HIGH);
   digitalWrite(7, LOW);
   digitalWrite(6, LOW);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void zero() {
@@ -187,11 +188,11 @@ void zero() {
   digitalWrite(8, HIGH);
   digitalWrite(7, HIGH);
   digitalWrite(6, HIGH);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
 
 void point() {
@@ -203,9 +204,9 @@ void point() {
   digitalWrite(8, LOW);
   digitalWrite(7, LOW);
   digitalWrite(6, LOW);
-  delay(500);
+  delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
   }
-  delay(200);
+  delay(delaytime);
 }
