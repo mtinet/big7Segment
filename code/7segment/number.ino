@@ -1,4 +1,4 @@
-int delaytime = 50;
+int delaytime = 200;
 
 void setup() {
   pinMode(13, OUTPUT);
@@ -12,18 +12,21 @@ void setup() {
 }
 
 void loop() {
-  intro();
-  one();
-  two();
-  three();
-  four();
-  five();
-  six();
-  seven();
-  eight();
-  nine();
-  zero();
-  point();
+//  intro();
+//  one();
+//  two();
+//  three();
+//  four();
+//  five();
+//  six();
+//  seven();
+//  eight();
+//  nine();
+//  zero();
+//  point();
+  horizon();
+  vertical();
+  rect();
 }
 
 void intro() {
@@ -204,6 +207,67 @@ void point() {
   digitalWrite(8, LOW);
   digitalWrite(7, LOW);
   digitalWrite(6, LOW);
+  delay(delaytime);
+  for(int i = 13; i > 5; i--) {
+    digitalWrite(i, LOW);
+  }
+  delay(delaytime);
+}
+
+void horizon() {
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(7, HIGH);
+  digitalWrite(6, LOW);
+  delay(delaytime);
+  for(int i = 13; i > 5; i--) {
+    digitalWrite(i, LOW);
+  }
+  delay(delaytime);
+}
+
+void vertical() {
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(7, LOW);
+  digitalWrite(6, HIGH);
+  delay(delaytime);
+  for(int i = 13; i > 5; i--) {
+    digitalWrite(i, LOW);
+  }
+  delay(delaytime);
+}
+
+void rect() {
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(6, LOW);
+  delay(delaytime);
+  for(int i = 13; i > 5; i--) {
+    digitalWrite(i, LOW);
+  }
+  delay(delaytime);
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(6, HIGH);
   delay(delaytime);
   for(int i = 13; i > 5; i--) {
     digitalWrite(i, LOW);
