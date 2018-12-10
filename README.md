@@ -18,14 +18,14 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 '''
 // Set these to run example. 
-// 이 부분은 구글 firebase 페이지에 있는 본인의 계정에 만들어진 firebase 프로젝트의 내용을 참고하셔야 합니다.
-// FIREBASE_HOST는 firebase project - database - data 탭아래의 URL의 앞부분의 'https://'와 마지막의 '/'를 제외한 다음 복사하세요.
-// FIREBASE_AUTH는 firebase project - ⚙ 그림 선택 - 프로젝트 설정 - 서비스 계정 - 데이터베이스 비밀번호 - 데이터베이스프로젝트이름
-// 쪽으로 마우스를 이동하면 '표시' 버튼이 보입니다. 그 버튼을 누르면 비밀번호가 표시되게 되고 이것을 복사해서 여기에 넣어주어야 합니다.
-#define FIREBASE_HOST "makered-44747.firebaseio.com" 
-#define FIREBASE_AUTH "ZPu3qYNDvRhWkCzehkPnDEfxOoDc5ze99qec7hUd"
-#define WIFI_SSID "G6 plus_2362"
-#define WIFI_PASSWORD "33333333"
+// 이 부분은 구글 firebase 페이지에 있는 본인의 계정에 만들어진 firebase 프로젝트의 내용을 참고하셔야 합니다.  
+// FIREBASE_HOST는 firebase project - database - data 탭아래의 URL의 앞부분의 'https://'와 마지막의 '/'를 제외한 다음 복사하세요.  
+// FIREBASE_AUTH는 firebase project - ⚙ 그림 선택 - 프로젝트 설정 - 서비스 계정 - 데이터베이스 비밀번호 - 데이터베이스프로젝트이름  
+// 쪽으로 마우스를 이동하면 '표시' 버튼이 보입니다. 그 버튼을 누르면 비밀번호가 표시되게 되고 이것을 복사해서 여기에 넣어주어야 합니다.  
+#define FIREBASE_HOST "makered-44747.firebaseio.com"  
+#define FIREBASE_AUTH "ZPu3qYNDvRhWkCzehkPnDEfxOoDc5ze99qec7hUd"  
+#define WIFI_SSID "G6 plus_2362"  
+#define WIFI_PASSWORD "33333333"  
 '''
 
 ---
