@@ -9,6 +9,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 ### 스케치-라이브러리 포함하기-라이브러리 관리-arduinojson을 검색하여 최신버전으로 설치(베타버전 아님)  
 
 ### firebase-arduino 라이브러리는 아래 링크로 들어가서 다운로드한 다음 아두이노 라이브러리 폴더에 넣고 아두이노 IDE를 재시작 함(하위 폴더가 생기지 않도록 해야 함, C드라이브-program files(x86)-arduino-libraries 또는 문서-arduino-libraries)  
+[firebase-arduino 라이브러리 다운로드](https://github.com/FirebaseExtended/firebase-arduino)
 
 ---
 ### 기본 세팅과 라이브러리 다운로드, 심화 세팅은 아래 링크로 들어가서 아래쪽 번역된 부분을 확인 바람  
