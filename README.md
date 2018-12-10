@@ -26,6 +26,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 #define WIFI_SSID "G6 plus_2362"  
 #define WIFI_PASSWORD "33333333"  
 
+#### firebase를 이용해 원격제어를 할 경우 센서나 액츄에이터가 달려있는 쪽과 그것을 보여주는 웹 사이에서 firebase가 중계를 해주므로 외부에서 학교 인터넷망에 직접 들어올 필요가 없음. 따라서 학교에서 학교망을 이용해 서버를 구축했을 때 학교 외부망에서 접근이 불가능하던 문제를 해결해 줄 수 있음.  
 
 ---
 ### 기본 세팅과 라이브러리 다운로드, 심화 세팅은 아래 링크로 들어가서 아래쪽 번역된 부분을 확인 바람  
