@@ -16,6 +16,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 6. firebase에 데이터를 올리고 내리기 위해서는 firebase의 host, auth와 와이파이 ssid, pw를 입력해줘야 함  
 
+'''
 // Set these to run example. 
 // 이 부분은 구글 firebase 페이지에 있는 본인의 계정에 만들어진 firebase 프로젝트의 내용을 참고하셔야 합니다.
 // FIREBASE_HOST는 firebase project - database - data 탭아래의 URL의 앞부분의 'https://'와 마지막의 '/'를 제외한 다음 복사하세요.
@@ -25,6 +26,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 #define FIREBASE_AUTH "ZPu3qYNDvRhWkCzehkPnDEfxOoDc5ze99qec7hUd"
 #define WIFI_SSID "G6 plus_2362"
 #define WIFI_PASSWORD "33333333"
+'''
 
 ---
 ### 기본 세팅과 라이브러리 다운로드, 심화 세팅은 아래 링크로 들어가서 아래쪽 번역된 부분을 확인 바람  
