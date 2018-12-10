@@ -15,9 +15,8 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 [아두이노 ino 파일 링크](https://github.com/mtinet/big7SegmentAtArduinoAndFirebase/blob/master/code/esp8266.ino)  
 
 6. firebase에 데이터를 올리고 내리기 위해서는 firebase의 host, auth와 와이파이 ssid, pw를 입력해줘야 함  
-
-'''
-// Set these to run example. 
+* 예시  
+// Set these to run example.  
 // 이 부분은 구글 firebase 페이지에 있는 본인의 계정에 만들어진 firebase 프로젝트의 내용을 참고하셔야 합니다.  
 // FIREBASE_HOST는 firebase project - database - data 탭아래의 URL의 앞부분의 'https://'와 마지막의 '/'를 제외한 다음 복사하세요.  
 // FIREBASE_AUTH는 firebase project - ⚙ 그림 선택 - 프로젝트 설정 - 서비스 계정 - 데이터베이스 비밀번호 - 데이터베이스프로젝트이름  
@@ -26,7 +25,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 #define FIREBASE_AUTH "ZPu3qYNDvRhWkCzehkPnDEfxOoDc5ze99qec7hUd"  
 #define WIFI_SSID "G6 plus_2362"  
 #define WIFI_PASSWORD "33333333"  
-'''
+
 
 ---
 ### 기본 세팅과 라이브러리 다운로드, 심화 세팅은 아래 링크로 들어가서 아래쪽 번역된 부분을 확인 바람  
